@@ -26,6 +26,9 @@ from .creation_date import CheckCreationDate
 from .cve_format import CheckCVEFormat
 from .cvss_format import CheckCVSSFormat
 from .dependencies import CheckDependencies
+from .dependency_category_order import CheckDependencyCategoryOrder
+from .deprecated_dependency import CheckDeprecatedDependency
+from .deprecated_functions import CheckDeprecatedFunctions
 from .double_end_points import CheckDoubleEndPoints
 from .duplicate_oid import CheckDuplicateOID
 from .duplicated_script_tags import CheckDuplicatedScriptTags
@@ -39,6 +42,7 @@ from .misplaced_compare_in_if import CheckMisplacedCompareInIf
 from .missing_tag_solution import CheckMissingTagSolution
 from .newlines import CheckNewlines
 from .overlong_script_tags import CheckOverlongScriptTags
+from .script_add_preference_type import CheckScriptAddPreferenceType
 from .script_category import CheckScriptCategory
 from .script_copyright import CheckScriptCopyright
 from .solution_type import CheckSolutionType
@@ -58,6 +62,9 @@ _NASL_ONLY_PLUGINS = [
     CheckCopyrightYear,
     CheckCreationDate,
     CheckDependencies,
+    CheckDependencyCategoryOrder,
+    CheckDeprecatedDependency,
+    CheckDeprecatedFunctions,
     CheckDoubleEndPoints,
     CheckDuplicateOID,
     CheckDuplicatedScriptTags,
@@ -70,6 +77,7 @@ _NASL_ONLY_PLUGINS = [
     CheckMissingTagSolution,
     CheckNewlines,
     CheckOverlongScriptTags,
+    CheckScriptAddPreferenceType,
     CheckScriptCategory,
     CheckScriptCopyright,
     CheckSolutionType,
